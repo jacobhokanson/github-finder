@@ -1,13 +1,11 @@
-import React from 'react'
+import React from 'react';
 
-function Alert({alert}) {
-  return (
-    alert != null && (
-        <div className={`alert alert-${alert.type}`}>
-            {alert.msg}
-        </div>
-    )
-  )
+function Alert({ alert }) {
+    return (
+        alert != null && (
+            <div className={`alert alert-${alert.type}`}>{alert.msg}</div>
+        )
+    );
 }
 
-export default Alert
+export default Alert;
