@@ -4,27 +4,27 @@ import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 function Navbar({ title }) {
-    return (
-        <nav className='navbar bg-primary'>
-            <Link to='/'>
-                <FaGithub size='2em' />
-                <h1 style={{ display: 'inline', padding: '10px' }}>{title}</h1>
-            </Link>
-            <ul>
-                <li>
-                    <Link to='/about'>About</Link>
-                </li>
-            </ul>
-        </nav>
-    );
+  return (
+    <nav className='navbar bg-primary'>
+      <Link to='/'>
+        <FaGithub size='2em' />
+        <h1 style={{ display: 'inline', padding: '10px' }}>{title}</h1>
+      </Link>
+      <ul>
+        <li>
+          <Link to='/about'>About</Link>
+        </li>
+      </ul>
+    </nav>
+  );
 }
 
 Navbar.defaultProps = {
-    title: 'default',
+  title: 'default',
 };
 
 Navbar.propTypes = {
-    title: PropTypes.string,
+  title: PropTypes.string,
 };
 
 export default Navbar;
